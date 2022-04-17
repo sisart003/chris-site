@@ -1,0 +1,624 @@
+/*
+    #ffa31a
+    #808080
+    #292929
+    #1b1b1b
+    #ffffff
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #1b1b1b;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    background: #1b1b1b;
+    z-index: 1;
+}
+
+nav #mobile-nav{
+    display: none;
+}
+
+#nav-bar ul{
+    height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-bar ul li{
+    list-style-type: none;
+    margin: 0 1.4rem;
+}
+
+#nav-bar ul li a{
+    color: #ffa31a;
+    text-decoration: none;
+    border-radius: 45px;
+    background: #1b1b1b;
+    box-shadow:  7px 7px 14px #151515,
+                -7px -7px 14px #212121;
+    padding: 0.6rem 1.4rem;
+}
+
+#nav-bar ul li a:hover{
+    color: #ffa31a;
+    border-radius: 50px;
+    box-shadow: inset 7px 7px 14px #151515,
+                inset -7px -7px 14px #212121;
+}
+
+
+#header{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#header h1{
+    padding: 1rem 3rem;
+    margin-top: 8rem;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    font-weight: 800;
+    border-radius: 43px;
+    background: #1b1b1b;
+    box-shadow:  9px 9px 18px #161616,
+                -9px -9px 18px #202020;
+}
+
+#header span{
+    color: #ffa31a;
+}
+
+#header .auto-type{
+    text-shadow: none;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li{
+    margin: 0 1.4rem;
+    list-style-type: none;
+}
+
+#header ul li a{
+    padding: 0.8rem 1.2rem;
+    background: red;
+    color: #ffa31a;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow:  9px 9px 18px #0f0f0f,
+                -9px -9px 18px #272727;
+}
+
+#header ul li a:hover{
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow: inset 9px 9px 18px #0f0f0f,
+                inset -9px -9px 18px #272727;
+}
+
+#header ul li a:hover{
+    color: white;
+    transition: 1s;
+}
+
+#header img{
+    width: 160px;
+    height: 160px;
+}
+
+section #about{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem;
+    align-items: center;
+}
+
+section #about img{
+    width: 300px;
+    height: 350px;
+    border-radius: 41px;
+background: #1b1b1b;
+box-shadow: inset 7px 7px 14px #161616,
+            inset -7px -7px 14px #202020;
+    padding: 2rem;
+}
+
+section .about-desc{
+    padding: 2rem;
+    width: 40vw;
+    height: 50vh;
+    border-radius: 41px;
+background: #1b1b1b;
+box-shadow: inset 7px 7px 14px #161616,
+            inset -7px -7px 14px #202020;
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+}
+
+section .about-desc h3, section .about-desc p{
+    margin: 1rem;
+}
+
+section .about-desc h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: #ffa31a;
+    letter-spacing: 0.8rem;
+}
+
+section #projects{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+section #projects .project-lists{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+section .project-list{
+    padding-bottom: 5rem;
+    width: 18%;
+    margin: 1rem;
+    border-radius: 26px;
+background: #1b1b1b;
+box-shadow:  7px 7px 13px #151515,
+             -7px -7px 13px #212121;
+             position: relative;
+        
+}
+
+section .project-list img{
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+}
+
+section .project-list p, h3{
+    margin: 1rem;
+}
+
+section .project-list a{
+    padding: 1rem;
+    margin-right: 2rem;
+    float: right;
+    text-decoration: none;
+    color:#ffa31a;
+    border-radius: 43px;
+    background: #1b1b1b;
+    box-shadow:  8px 8px 24px #141414,
+                -8px -8px 24px #222222;
+    position: absolute;
+    bottom: 1rem;
+    right: 0;
+}
+
+section .project-list a:hover{
+    box-shadow: inset 8px 8px 24px #141414,
+                inset -8px -8px 24px #222222;
+}
+
+section #projects h2{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    border-radius: 45px;
+    background: #1b1b1b;
+    box-shadow: inset 7px 7px 14px #151515,
+            inset -7px -7px 14px #212121;
+                padding: 1rem 3rem;
+    margin-bottom: 3rem;
+}
+
+
+section #projects .visit{
+    margin: 4rem 0;
+    border-radius: 43px;
+    background: #1b1b1b;
+    box-shadow:  9px 9px 18px #161616,
+                -9px -9px 18px #202020;
+    padding: 1rem 3rem;
+}
+
+section #projects .visit a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+}
+
+section #projects .visit:hover{
+    box-shadow: inset 9px 9px 18px #161616,
+                inset -9px -9px 18px #202020;
+}
+
+section #projects .visit i{
+    color: #ffa31a;
+    font-size: 2rem;
+}
+
+
+section #skills{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 8rem;
+}
+
+section #skills h2{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    border-radius: 45px;
+    background: #1b1b1b;
+    box-shadow: inset 7px 7px 14px #151515,
+            inset -7px -7px 14px #212121;
+    padding: 1rem 3rem;
+    margin-bottom: 3rem;
+}
+
+section #skill-lists{
+    width: 60vw;
+}
+
+section #skill-lists ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section #skill-lists ul li{
+    padding: 1rem 2.4rem;
+    margin: 1.4rem;
+    list-style-type: none;
+    font-size: 4rem;
+    border-radius: 43px;
+    background: #1b1b1b;
+    box-shadow:  9px 9px 18px #161616,
+                -9px -9px 18px #202020;
+}
+
+section #skill-lists ul li:hover{
+    box-shadow: inset 9px 9px 18px #161616,
+                inset -9px -9px 18px #202020;
+    color: #ffa31a;
+}
+
+
+footer{
+    height: 50vh;
+    width: 100%;
+    margin-top: 10rem;
+}
+
+footer #footer .nav-foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .left-side{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left-side ul li{
+    list-style-type: none;
+    margin: 2rem 0;
+}
+
+footer .left-side ul li a{
+    text-decoration: none;
+    border-radius: 10px;
+    background: #1b1b1b;
+    box-shadow:  6px 6px 12px #161616,
+                 -6px -6px 12px #202020;
+    padding: 0.6rem 1.4rem;
+    color: #fff;
+}
+
+footer .left-side ul li a:hover{
+    color: #ffa31a;
+    box-shadow: inset 6px 6px 12px #161616,
+                inset -6px -6px 12px #202020;
+}
+
+footer .middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+
+footer .middle ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .middle ul li{
+    list-style-type: none;
+}
+
+footer .middle ul li a{
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1d1d1d, #181818);
+    box-shadow:  15px 15px 30px #101010,
+                -15px -15px 30px #262626;
+    padding: 1rem 1.4rem;
+}
+
+footer .middle ul li a:hover{
+    color: #ffa31a;
+    box-shadow: inset 15px 15px 30px #101010,
+                inset -15px -15px 30px #262626;
+}
+
+footer .middle button{
+    margin-bottom: 2rem;
+    
+}
+
+/* From uiverse.io by @namecho */
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
+}
+
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "ESTRADA";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
+ animation: 1s glitch infinite;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+footer .right-side{
+    width: 30%;
+}
+
+footer .right-side p{
+    padding: 1rem 2rem;
+    margin: 2rem 1rem;
+    border-radius: 13px;
+    background: #1b1b1b;
+    box-shadow:  6px 6px 12px #161616,
+                -6px -6px 12px #202020;
+}
+
+footer .right-side p:hover{
+    color: #ffa31a;
+    box-shadow: inset 6px 6px 12px #161616,
+                inset -6px -6px 12px #202020;
+}
+
+
+@media (max-width: 720px) {
+    #header h1{
+        padding: 1rem 3rem;
+        margin-top: 6rem;
+        font-size: 1.8rem;
+        letter-spacing: 8px;
+    }
+
+
+    section #about{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+    
+    section #about img{
+        width: 350px;
+    }
+    
+    section .about-desc{
+        padding: 2rem;
+        width: 80%;
+        height: auto;
+    }
+
+    section #projects{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section #projects .project-lists{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    section .project-list{
+        padding-bottom: 5rem;
+        width: 80%;
+        justify-content: center;
+    }
+    
+    section .project-list a{
+        padding: 1rem;
+        margin-right: 2rem;
+        float: right;
+        text-decoration: none;
+        color:#ffa31a;
+        border-radius: 43px;
+        background: #1b1b1b;
+        box-shadow:  8px 8px 24px #141414,
+                    -8px -8px 24px #222222;
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+    }
+    
+    section .project-list a:hover{
+        box-shadow: inset 8px 8px 24px #141414,
+                    inset -8px -8px 24px #222222;
+    }
+    
+    section #projects h2{
+        font-size: 2rem;
+        letter-spacing: 1rem;
+        border-radius: 45px;
+        background: #1b1b1b;
+        box-shadow: inset 7px 7px 14px #151515,
+                inset -7px -7px 14px #212121;
+                    padding: 1rem 3rem;
+        margin-bottom: 3rem;
+    }
+    
+    
+    section #projects .visit{
+        margin: 4rem 0;
+        border-radius: 43px;
+        background: #1b1b1b;
+        box-shadow:  9px 9px 18px #161616,
+                    -9px -9px 18px #202020;
+        padding: 1rem 3rem;
+    }
+    
+    section #projects .visit a{
+        text-decoration: none;
+        font-size: 2rem;
+        color: #fff;
+        font-size: 1.2rem;
+        letter-spacing: 4px;
+    }
+    
+    section #projects .visit:hover{
+        box-shadow: inset 9px 9px 18px #161616,
+                    inset -9px -9px 18px #202020;
+    }
+    
+    section #projects .visit i{
+        color: #ffa31a;
+        font-size: 2rem;
+    }
+
+
+}
